@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/candid/cropped-favicon-32x32.png">
+    <title>AISVN Counseling Department</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="navbar">
+            <img src="images/AISNVN_logo_CS5_White-1.png">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="%" class="nav-links"><b>Home</b></a></li>
+                <li><a href="%" class="nav-links"><b>University Insight</b></a></li>
+                    <li><a href="%" class="nav-links"><b>People</b></a></li>
+                <li><a href="%" class="nav-links"><b>Staying Connected</b></a></li>
+                <li><a href="%" class="nav-links"><b>Time for a break</b></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="bannerimage">
+        <h1>AISVN Counseling Department</h1>
+        <a href="">Schedule an appointment</a>
+    </div>
+    
+    <div class="container">
+        <h1>Kelsey Acevedo-Soto</h1>
+        <h2>Secondary School & University Counselor (G10-12)</h2>
+    <div class="image">
+        <img src ="images/candid/Kelsey Acevedo-Soto photo 2.jpg" alt="fp">
+        <img src ="images/candid/Opera Snapshot_2021-09-20_161919_sites.google.com.png" alt="fB">
+    </div>
+    <p>Greetings!
+
+        This is Ms. Kelsey and Ms. Vy - Your university guidance team. 
+        
+        Ms. Kelsey is the counselor, an American from California who went to Loyola Marymount University, Los Angeles and pursued her degree in Marriage and Family Therapy with specialization in Art Therapy and has counseled in the U.S. and Kuwait. 
+        
+        Ms. Trang is the Secondary Registrar. 
+        
+        Please know, as you go through this process, there is always someone here to help you every step of the way! If you have questions, make contact!
+        
+        Email: kelsey.acevedo-soto@ais.edu.vn, vy.nguyen@ais.edu.vn. or trang.tt.tran@ais.edu.vn
+        
+        Office: Room 405 - Building A.</p>
+    </div>
+    
+    <script src="app.js">
+
+    </script>
+<style>
+:root{
+    --aisblue:#087cc4;
+    --aisyellow:#ffd43c;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.nav-container {
+    width:100%;
+    background-color: var(--aisblue);
+}
+.navbar {
+    display: grid;
+    grid-template-columns:0.2fr auto 1fr;
+    align-items: center;
+    height:80px;
+    width:90%;
+    max-width:1720px;
+    margin:0 auto;
+}
+img{
+    justify-self: start;
+    margin-left:20px;
+    cursor:pointer;
+    max-width: 50%;
+    max-height:50%;
+}
+.nav-menu{
+    display:grid;
+    grid-template-columns: repeat(5,auto);
+    list-style: none;
+    text-align:center;
+    width:70%;
+    justify-self: end;
+}
+.nav-links{
+    color:white;
+    text-decoration: none;
+}
+.nav-links:hover{
+    color: var(--aisyellow);
+    transition:0.2 ease-out;
+}
+.menu-toggle .bar{
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    transition: all 0.3s ease-in-out;
+    background: white;
+}
+@media screen and (max-width: 900px) {
+    .nav-container{
+        position:relative;
+    }
+    .nav-menu{
+        display:grid;
+        grid-template-columns: auto;
+        background:var(--aisblue);
+        margin:0;
+        width:100%;
+        position:absolute;
+        top:80px;
+        left:-100%;
+        opacity:0;
+        transition: all 0.5 ease;
+    }
+    img{
+        margin-left:2px;
+    }
+    .nav-menu.active{
+        background:var(--aisblue);
+        left:0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-links{
+        text-align:center;
+        line-height: 60px;
+        width:100%;
+        display: table;
+    }
+    .nav-links:hover{
+        background-color: var(--aisblue);
+        color:var(--aisyellow);
+        transition: all 0.4s ease;
+    }
+    .navbar{
+        width:100%;
+    }
+    #mobile-menu{
+        position:absolute;
+        top:50%;
+        right:5%;
+        transform:translate(5%,20%);
+    }
+    .menu-toggle .bar{
+        display:block;
+        cursor:pointer;
+    }
+    .menu-toggle:hover{
+        cursor:pointer
+    }
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity:0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    #bannerimage h1{
+        display: none;
+    }
+    #bannerimage a{
+        display:none;
+    }
+    
+}
+.image img{
+    border-radius: 50%;
+    width: 150px;
+}
+#bannerimage{
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,3.0,0.7)), url(images/candid/american-international-school-vietnam-aisvn.jpg);
+  height: 90VH;
+  background-position: center;
+}
+#bannerimage {
+    text-align: center;
+    color:white;
+    font-size: 45px;
+    border-top: 200px;
+}
+#bannerimage h1{
+    line-height:55vh;
+}
+#bannerimage a{
+    background-color: var(--aisyellow);
+    text-decoration:none;
+    display: inline-block;
+    color:white;
+    border: 1px solid white;
+    padding: 25px 68px;
+    font-size:22px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+}
+#bannerimage a:hover{
+    border:1px solid;
+    background:var(--aisyellow);
+    transition:1s;
+}
+
+
+
+
+    
+
+
+
+
+</style>
+</body>
+</html>
